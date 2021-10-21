@@ -1,41 +1,33 @@
-<!DOCTYPE html>
 <html>
+    
+    <head><title>Exercice 3</title></head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>exercice 3</title>
-    <link rel="stylesheet" href="Index.css">
-</head>
+    <body>
+        <?php
+                $Table[0] = array ("Nom" => "Godefroy", "Prénom" => "Jules", "MDP" => "2456");
+                $Table[1] = array ("Nom" => "Dupont", "Prénom" => "Yannis", "MDP" => "4562");
+                $Table[2] = array ("Nom" => "Dupontreue",  "Prénom" =>  "Theo", "MDP" => "6542");
+        
+                echo "<table>";
 
-<body>
-    <?php
-    $array = array(
-        "Perso1" => array(
-            'Nom' => '<p>Godefroy</p>',
-            'Prenom' => 'Jules',
-            'MotDePasse' => 'MDP : Mot de passe'
-        ),
-    );    
-    $array1 = array(
-        "Perso2" => array(
-            'Nom' => 'qsdqsdqsd',
-            'Prenom' => '<p>qsdqsdqds</p>',
-            'MotDePasse' => 'MDP : Mot de passe'
-        ),
-    );    
-    $array2 = array(
-        "Perso3" => array(
-            'Nom' => 'qsdfqsf',
-            'Prenom' => 'qsdqsdf',
-            'MotDePasse' => 'MDP : Mot de passe'
-        ),
-    );
-    echo $array["Perso1"]["Nom"];
-    echo $array1["Perso2"]["Prenom"];
-    echo $array2["Perso3"]["MotDePasse"];
+                for ($i = 0; $i <3; $i++) {
+            
+    
+                    echo "<tr></tr>";
+            
+        
+                foreach ($Table[$i] as $value) {
+            
+                    echo "<td>";
+                    echo "$value";
+                }
+            }
+                echo "</table>";
 
-    ?>
-</body>
+            ?>
+
+            <a href="/Godefroy/">Acceuil</a>
+
+    </body>
+
 </html>
