@@ -30,5 +30,8 @@
                 echo "L'équation n'a pas de solutions réelles car Delta est negatif";
             }
         ?>
+        <div>
+            <a href="/Godefroy/">Acceuil</a>
+        </div>
     </body>
 </html>
